@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivy.md_ui.BreathePage">
+
+<FrameLayout
+    android:id="@+id/page"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/spire_blue_background"
+    >
+    <TextView
+        android:id="@+id/now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50pt"
+        android:gravity="center"
+        android:text="Breathe Mode"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60pt"
+        android:gravity="center"
+        android:text=" - -"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="20dp"
+        android:text="14.7"
+        android:textColor="#FFFFFF"
+        android:textSize="27pt" />
+
+    <TextView
+        android:id="@+id/B_P_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="20dp"
+        android:text="Breaths per minute"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/clound_icon" />
+
+
+</FrameLayout>
+
+
+
+  <LinearLayout
+      android:id="@+id/footer"
+      style="@android:style/ButtonBar"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true">
+
+
+      <Button
+          android:id="@+id/DataButton"
+          android:layout_weight="1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@android:color/white"
+          android:text="data"
+          android:textSize="12dp"
+          android:drawableTop="@drawable/drop"/>
+
+      <Button
+          android:id="@+id/GuideButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@android:color/white"
+          android:text="Guide"
+          android:textSize="12dp"
+          android:drawableTop="@drawable/drop"/>
+
+      <Button
+          android:id="@+id/BreatheButton"
+          android:layout_width="30dp"
+          android:layout_height="50dp"
+          android:padding="10dp"
+          android:layout_weight="1"
+
+          android:background="@drawable/breathe_icon"
+
+
+
+          />
+
+      <Button
+          android:id="@+id/FriendsButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@android:color/white"
+          android:text="Friends"
+          android:textSize="12dp"
+          android:drawableTop="@drawable/drop"/>
+      <Button
+          android:id="@+id/SettingButton"
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:background="@android:color/white"
+          android:text="Setting"
+          android:textSize="12dp"
+          android:drawableTop="@drawable/drop"/>
+ </LinearLayout>
+
+
+
+</RelativeLayout>
